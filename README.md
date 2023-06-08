@@ -88,23 +88,16 @@ Print prices.isna().sum()
 Here is how the sp500.csv data should be preprocessed:
 
 Resample data on month and keep the last value
-Compute historical monthly returns on the adjusted close 3. Create signal
+Compute historical monthly returns on the adjusted close
+
+3. Create signal
 At this stage we have a data set with features that we will leverage to get an investment signal. As previously said, we will focus on one single variable to create the signal: monthly_past_return. The signal will be the average of monthly returns of the previous year
 
 The naive assumption made here is that if a stock has performed well the last year it will perform well the next month. Moreover, we assume that we can buy stocks as soon as we have the signal (the signal is available at the close of day d and we assume that we can buy the stock at close of day d. The assumption is acceptable while considering monthly returns, because the difference between the close of day d and the open of day d+1 is small comparing to the monthly return)
 
 Create a column average_return_1y
-Create a column named signal that contains True if average_return_1y is among the 20 highest in the month average_return_1y. 4. Backtester
-At this stage we have an investment signal that indicates each month what are the 20 companies we should invest 1$ on (1$ each). In order to check the strategies and performance we will backtest our investment signal.
+Create a column named signal that contains True if average_return_1y is among the 20 highest in the month average_return_1y. 
 
-Compute the PnL and the total return of our strategy without a for loop. Save the results in a text file results.txt in the folder results.
-Compute the PnL and the total return of the strategy that consists in investing 20$ each day on the SP500. Compare. Save the results in a text file results.txt in the folder results.
-Create a plot that shows the performance of the strategy over time for the SP500 and the Stock Picking 20 strategy.
-A data point (x-axis: date, y-axis: cumulated_return) is: the cumulated returns from the beginning of the strategy at date t. Save the plot in the results folder.
-
-This plot is used a lot in Finance because it helps to compare a custom strategy with in index. In that case we say that the SP500 is used as benchmark for the Stock Picking Strategy.
-
-alt text
 
 5. Main
    Here is a sketch of main.py.
@@ -123,6 +116,5 @@ prices, sp500 = preprocessing(prices, sp500)
 
 prices = create_signal(prices)
 
-#backtest
-backtest(prices, sp500)
 The command python main.py executes the code from data imports to the backtest and save the results.
+
