@@ -56,14 +56,8 @@ There are four parts:
    Determine if the column can be represented by an integer
    Find the min and the max value
    Determine and apply the smallest datatype that can fit the range of values
+   
 2. Data wrangling and preprocessing
-   Create a Jupyter Notebook to analyse the data sets and perform EDA (Exploratory Data Analysis). This notebook should contain at least:
-
-Missing values analysis
-Outliers analysis (there are a lot of outliers)
-One of average price for companies for all variables (save the plot with the images).
-Describe at least 5 outliers ('ticker', 'date', 'price'). Put them in outliers.txt file with the 3 fields on the folder results.
-Note: create functions that generate the plots and save them in the images folder. Add a parameter plot with a default value False which doesn't return the plot. This will be useful for the correction to let people run your code without overriding your plots.
 
 Here is how the prices data should be preprocessed:
 
