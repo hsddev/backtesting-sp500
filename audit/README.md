@@ -83,11 +83,6 @@ Best practice:
 
 ###### Is the signal added as a new column to the merged DataFrame? The signal which is boolean indicates whether, within the same month, the company is in the top 20. The top 20 corresponds to the 20 companies with the 20 highest metric within the same month. The highest metric gets the rank 1 (if rank is used the parameter **ascending** should be set to **False**).
 
-
-![alt text][performance]
-
-[performance]: ../images/w1_weekend_plot_pnl.png "Cumulative Performance"
-
-##### 5. main.py
+##### 4. main.py
 
 ###### Does the command **python main.py** execute the code from data imports to the backtest and save the results? It shouldn't return any error to validate the project.
