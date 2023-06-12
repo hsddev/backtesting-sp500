@@ -83,23 +83,6 @@ Best practice:
 
 ###### Is the signal added as a new column to the merged DataFrame? The signal which is boolean indicates whether, within the same month, the company is in the top 20. The top 20 corresponds to the 20 companies with the 20 highest metric within the same month. The highest metric gets the rank 1 (if rank is used the parameter **ascending** should be set to **False**).
 
-##### 4. backtester.py
-
-###### Is the PnL computed by multiplying the signal **Series** by the **future returns**?
-
-###### Is the return of the strategy computed by dividing the PnL by the sum of the signal **Series**.
-
-###### Is the signal used on the SP500 the **pd.Series([20,20,...,20])**?
-
-###### Are the series used in the plot the cumulative PnL? **cumsum** can be used.
-
-###### Is the PnL on the full historical data **smaller than 75$**? If not, it means that the outliers where not corrected correctly.
-
-###### Does the plot contain a title?
-
-###### Does the plot contain a legend?
-
-###### Does the plot contain a x-axis and y-axis name?
 
 ![alt text][performance]
 
