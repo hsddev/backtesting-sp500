@@ -107,7 +107,7 @@ At this stage the DataFrame should looks like this:
   - Resample data on month and keep the last value
   - Compute historical monthly returns on the adjusted close
 
-### Bonus:
+# Bonus:
 
 ## 3. Create signal
 
