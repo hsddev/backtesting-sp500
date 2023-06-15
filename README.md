@@ -107,6 +107,8 @@ At this stage the DataFrame should looks like this:
   - Resample data on month and keep the last value
   - Compute historical monthly returns on the adjusted close
 
+### Bonus:
+
 ## 3. Create signal
 
 At this stage we have a data set with features that we will leverage to get an investment signal. As previously said, we will focus on one single variable to create the signal: **monthly_past_return**. The signal will be the average of monthly returns of the previous year
